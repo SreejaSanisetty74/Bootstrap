@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <style>
+    img{
+    width: 65%;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse "> 
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"></a>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFj0imuRGNxg8yI7B2ke41PNfZvbHu09H54ornnJQDkQ&s" width="40" height="70"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#"><span class="glyphicon glyphicon-home" ></span> Home</a></li>
+      <li class="dropdown"><a data-toggle="dropdown" href="#"> <span class= "glyphicon glyphicon-education" "caret"></span> Career</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+      </li>
+      <li class ="active"><a href="#"><span class ="glyphicon glyphicon-search" ></span> About us</a></li>
+      <li class="active"><a href="#"><span class ="glyphicon glyphicon-briefcase" ></span> Portfolio</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-earphone" ></span> Contact us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+
+</nav>
+  
+<div class="jumbotron jumbotron-fluid jumbotron-custom">
+    <div class="container">
+      
+      <h1 class="display-4">Welcome to My Website</h1>
+      <p class="lead">This is a simple homepage created using HTML, CSS, and Bootstrap.</p>
+    </div>
+  </div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-2">
+       <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+      </svg>
+    </div>
+    <div class="col-sm-2">
+	     <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+       <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+      </svg>
+    </div>
+    <div class="col-sm-2">
+	  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+      </svg>
+    </div>
+	  <div class="col-sm-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+      </svg>  
+    </div>
+	  <div class="col-sm-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+      <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+      </svg>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div class="container mt-5 p-4">
+  <div class="row p-3">
+    <div class="col-sm-6">
+      <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+       <script>
+         var xyValues = [
+         {x:50, y:7},
+         {x:60, y:8},
+         {x:70, y:8},
+         {x:80, y:9},
+         {x:90, y:9},
+         {x:100, y:9},
+         {x:110, y:10},
+         {x:120, y:11},
+         {x:130, y:14},
+         {x:140, y:14},
+         {x:150, y:15}
+         ];
+         new Chart("myChart", {
+         type: "scatter",
+         data: {
+         datasets: [{
+         pointRadius: 4,
+         pointBackgroundColor: "rgb(0,0,255)",
+         data: xyValues
+         }]
+         },
+         options: {
+         legend: {display: false},
+         scales: {
+         xAxes: [{ticks: {min: 40, max:160}}],
+         yAxes: [{ticks: {min: 6, max:16}}],
+         }
+         }
+         });
+        </script>
+      </div>
+      <div class="col-sm-6">
+        <h2 style ="text-align:center;">Scatter Plot</h2>
+        <p style="text-align: center; font-size: medium; align-items: center;">Scatter plots are the graphs that present the relationship between two variables in a data-set. It represents data points on a two-dimensional plane or on a Cartesian system. The independent variable or attribute is plotted on the X-axis, while the dependent variable is plotted on the Y-axis. These plots are often called scatter graphs or scatter diagrams.</p>
+      </div>
+  </div>
+  <div class="row p-3">
+      <div class="col-sm-6">
+        <h2 style ="text-align:center;">Line Graph</h2>
+        <p style="text-align: center; font-size: medium; align-items: center;">A line graph is a unique graph which is commonly used in statistics. It represents the change in a quantity with respect to another quantity. For example, the price of different flavours of chocolates varies, which we can represent with the help of this graph. This variation is usually plotted in a two-dimensional XY plane. If the relation including any two measures can be expressed utilizing a straight line in a graph, then such graphs are called linear graphs. Thus, the line graph is also called a linear graph.</p>
+      </div>
+      <div class="col-sm-6">
+        <canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
+        <script>
+           const xValues = [50,60,70,80,90,100,110,120,130,140,150];
+           const yValues = [7,8,8,9,9,9,10,11,14,14,15];
+           new Chart("myChart1", {
+             type: "line",
+              data: {
+               labels: xValues,
+               datasets: [{
+                 fill: false,
+                 lineTension: 0,
+                 backgroundColor: "rgba(0,0,255,1.0)",
+                 borderColor: "rgba(0,0,255,0.1)",
+                 data: yValues
+                }]
+              },
+              options: {
+               legend: {display: false},
+               scales: {
+                 xAxes: [{ticks: {min: 40, max:160}}],
+                 yAxes: [{ticks: {min: 6, max:16}}],
+                }
+              }
+           });
+        </script>
+      </div>
+  </div>
+  <div class="row p-3">
+    <div class="col-sm-6">
+     <div id="myChart3" style="width:100%; max-width:500px; height:400px;"></div>
+       <script>
+         google.charts.load('current', {'packages':['corechart']});
+         google.charts.setOnLoadCallback(drawChart);
+         function drawChart() {
+           const data = google.visualization.arrayToDataTable([
+             ['Contry', 'Mhl'],
+             ['Italy',54.8],
+             ['France',48.6],
+             ['Spain',44.4],
+             ['USA',23.9],
+             ['Argentina',14.5]
+            ]);
+            const options = {
+              title:'World Wide Wine Production'
+            };
+            const chart = new google.visualization.PieChart(document.getElementById('myChart3'));
+            chart.draw(data, options);
+          }
+        </script>
+      </div>
+      <div class="col-sm-6">
+        <h2 style="text-align: center;">Pie Chart</h2>
+        <p style="text-align: center; font-size: medium; align-items: center;">A pie chart, sometimes called a circle chart, 
+        is a way of summarizing a set of nominal data or displaying the different values of a given variable (e.g. percentage distribution). 
+       This type of chart is a circle divided into a series of segments. Each segment represents a particular category.</p>
+      </div>
+  </div>
+  <div class="row p-3">
+    <div class="col-sm-6">
+      <h2 style="text-align: center;">Bar Graph</h2>
+      <p style="text-align: center; font-size: large; align-items: center;">A bar chart or bar graph is a chart or graph that presents categorical
+      data with rectangular bars with heights or lengths proportional to the values that they represent.
+      The bars can be plotted vertically or horizontally.</p>
+    </div>
+    <div class="col-sm-6">
+        <div id="myChart4" style="width:100%; max-width:500px; height:400px;"></div>
+        <script>
+          google.charts.load('current', {'packages':['corechart']});
+          google.charts.setOnLoadCallback(drawChart);
+          function drawChart() {
+            const data = google.visualization.arrayToDataTable([
+              ['Contry', 'Mhl'],
+              ['Italy',55],
+              ['France',49],
+              ['Spain',44],
+              ['USA',24],
+              ['Argentina',15]
+            ]);
+            const options = {
+              title:'World Wide Wine Production'
+            };
+            const chart = new google.visualization.BarChart(document.getElementById('myChart4'));
+            chart.draw(data, options);
+          }
+        </script>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5 p-4">
+  <div class="row p-3">
+    <div class="col-sm-6">
+      <div class="card" style="width: 18rem;">
+        <img src="https://www.insidehook.com/wp-content/uploads/2017/08/google_081117-1.jpg?fit=1200%2C800" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Sundar Pichai</h4>
+          <p class="card-text" style="text-align: centerx;">Pichai Sundararajan born on June 10, 1972 better known as Sundar Pichai is an Indian-born American business executive. He is the chief executive officer (CEO) of Alphabet Inc. and its subsidiary Google.</p>
+          <a href="https://en.wikipedia.org/wiki/Sundar_Pichai" class="btn btn-primary">Click to know more</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-sm-6">
+      <div class="card" style="width: 18rem;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/MS-Exec-Nadella-Satya-2017-08-31-22_%28cropped%29.jpg/330px-MS-Exec-Nadella-Satya-2017-08-31-22_%28cropped%29.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Satya Nadella</h4>
+          <p class="card-text" style="text-align: center;">Satya Narayana Nadella born on 19 August 1967 is an Indian-American business executive. He is the executive chairman and CEO of Microsoft,succeeding Steve Ballmer in 2014 as CEO and John W.Thompson in 2021 as chairman. Before becoming CEO, he was the executive vice president of Microsoft's cloud and enterprise group, responsible for building and running the company's computing platforms.</p>
+          <a href="https://en.wikipedia.org/wiki/Satya_Nadella" class="btn btn-primary">Click to know more</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+<br>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Microsoft Corp
+          </h6>
+          <p>
+            Microsoft Corporation is an American multinational technology company that has been a key player in the computer industry since its founding in 1975. Headquartered in Redmond, Washington, Microsoft initially gained dominance in the operating systems market during the 1980s and ’90s with MS-DOS and Windows. Its strong market position eventually gave rise to the company’s diverse and extensive range of technological offerings, from personal computing and entertainment to enterprise cloud computing and artificial intelligence.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 91 9173057330</p>
+          <p><i class="fas fa-print me-3"></i> + 91 8900076210</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://aitsrajampet.com/">aitsrajampet.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
